@@ -1,33 +1,17 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class SupportTier1AppsRepo < Formula
-  desc ""
-  homepage ""
+class TmuxCssh < Formula
+  desc "apps-script that will install all u need buddy"
+  homepage "https://github.com/knakayama/apps-script"
   url "https://github.com/orbenharoshprojects/homebrew-support-tier1-apps-repo/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "6b78504e8b20159416675543060e799e67717a78968cc6542ea88f9e1d57c670"
-  license ""
+  sha256 "ce761f21fa0fe7050f408e687f9a4964acf95736c85678e3cc27cee88bd6ceed"
+  version "1.0"
 
-  # depends_on "cmake" => :build
+  depends_on "apps"
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
-    # Remove unrecognized options if warned by configure
-    # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    system "./configure", *std_configure_args, "--disable-silent-rules"
-    # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+    bin.install "apps-script"
   end
 
   test do
-    # `test do` will create, run in and delete a temporary directory.
-    #
-    # This test will fail and we won't accept that! For Homebrew/homebrew-core
-    # this will need to be a test that verifies the functionality of the
-    # software. Run the test with `brew test support-tier1-apps-repo`. Options passed
-    # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
-    #
-    # The installed folder is not in the path, so use the entire path to any
-    # executables being tested: `system "#{bin}/program", "do", "something"`.
-    system "false"
+    system "#{bin}/apps-script", "--help"
   end
 end
