@@ -1,7 +1,8 @@
 clear 
-echo  "Hey! let's get it strated in here"
+tput setaf 1; echo  "Hey! let's get it strated in here"
 
-printf'         /|         ,
+tput setaf 1; echo '
+                /|         ,
               ,///        /|
              // //     ,///
             // //     // //
@@ -21,11 +22,8 @@ printf'         /|         ,
      `/`  ` \  |||  / `  `\`
       `",_  \\=^~^=//  _,"`
           "=,\\-=-//="
-               ---'
-
-
-
-
+               ---
+  '
 
 # Check for Homebrew,
 # Install if we don't have it
