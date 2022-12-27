@@ -1,5 +1,7 @@
 clear 
-echo  "Hey! let's get it strated in here"
+echo  "Hey! let's get you all the applications u need.
+          This script will install all of the needed and recommended applications for you, 
+              You can review all of the installed applications in the text file that will be installed in this path"
 
 echo '
                 /|         ,
