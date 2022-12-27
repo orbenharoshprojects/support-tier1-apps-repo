@@ -58,5 +58,5 @@ wget http://app.prntscr.com/build/setup-lightshot.exe
 echo "Installing Muzzle App...( Silences notifications while screen sharing is active)"
 brew install --cask muzzle
 
-echo "Done!"
+done || exit 1
 
