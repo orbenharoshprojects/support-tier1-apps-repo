@@ -1,7 +1,7 @@
 clear 
-tput setaf 1; echo  "Hey! let's get it strated in here"
+echo  "Hey! let's get it strated in here"
 
-tput setaf 1; echo '
+echo '
                 /|         ,
               ,///        /|
              // //     ,///
@@ -29,7 +29,7 @@ tput setaf 1; echo '
 # Install if we don't have it
 if test ! $(which brew); then
   echo "Installing homebrew..."
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && yes | brew <...>
 fi
 
 # Update homebrew recipes
