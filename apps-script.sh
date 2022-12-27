@@ -1,4 +1,24 @@
-echo "Hey! let's get it strated in here"
+#color range: syntax ex: echo -e "${BLUE}Welcome ${WHITE}to ${RED}France" & bold -> echo -e "\033[1;33mBold text"
+BLUE='\033[0;44m'
+BLACK='\033[0;30m'
+WHITE='\033[0;30;47m'
+RED='\033[0;41m'
+
+
+printf '\e[48;5;%dm ' {0..255}; printf '\e[0m \n'
+echo "${WHITE}Hey! ${WHITE}let's ${WHITE}get ${WHITE}it ${WHITE}strated ${RED}in ${RED}here"
+color(){                                                                 
+    for c; do
+        printf '\e[48;5;%dm%03d' $c $c
+    done
+    printf '\e[0m \n'
+}
+
+IFS=$' \t\n'
+color {0..15}
+for ((i=0;i<6;i++)); do
+    color $(seq $((i*36+16)) $((i*36+51)))
+done
 
 # Check for Homebrew,
 # Install if we don't have it
