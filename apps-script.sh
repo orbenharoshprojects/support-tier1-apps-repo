@@ -7,18 +7,7 @@ RED='\033[0;41m'
 
 printf '\e[48;5;%dm ' {0..255}; printf '\e[0m \n'
 echo -e "${WHITE}Hey! ${WHITE}let's ${WHITE}get ${WHITE}it ${WHITE}strated ${RED}in ${RED}here"
-color(){                                                                 
-    for c; do
-        printf '\e[48;5;%dm%03d' $c $c
-    done
-    printf '\e[0m \n'
-}
 
-IFS=$' \t\n'
-color {0..15}
-for ((i=0;i<6;i++)); do
-    color $(seq $((i*36+16)) $((i*36+51)))
-done
 
 # Check for Homebrew,
 # Install if we don't have it
