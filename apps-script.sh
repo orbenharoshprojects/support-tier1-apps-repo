@@ -6,7 +6,7 @@ RED='\033[0;41m'
 
 
 printf '\e[48;5;%dm ' {0..255}; printf '\e[0m \n'
-echo "${WHITE}Hey! ${WHITE}let's ${WHITE}get ${WHITE}it ${WHITE}strated ${RED}in ${RED}here"
+echo -e "${WHITE}Hey! ${WHITE}let's ${WHITE}get ${WHITE}it ${WHITE}strated ${RED}in ${RED}here"
 color(){                                                                 
     for c; do
         printf '\e[48;5;%dm%03d' $c $c
