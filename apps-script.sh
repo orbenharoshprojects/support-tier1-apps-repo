@@ -1,12 +1,5 @@
-#color range: syntax ex: echo -e "${BLUE}Welcome ${WHITE}to ${RED}France" & bold -> echo -e "\033[1;33mBold text"
-BLUE='\033[0;44m'
-BLACK='\033[0;30m'
-WHITE='\033[0;30;47m'
-RED='\033[0;41m'
-
-
-
-echo -e "${WHITE}Hey! ${WHITE}let's ${WHITE}get ${WHITE}it ${WHITE}strated ${RED}in ${RED}here"
+clear 
+echo  "Hey! let's get it strated in here"
 
 printf'         /|         ,
               ,///        /|
