@@ -58,5 +58,57 @@ wget http://app.prntscr.com/build/setup-lightshot.exe
 echo "Installing Muzzle App...( Silences notifications while screen sharing is active)"
 brew install --cask muzzle
 
-done || exit 1
+echo "Installing Docker"
+brew install --cask docker
 
+echo "Installing Python 3"
+brew install python
+
+echo "Installing pip"
+python3 -m pip install –upgrade pip
+
+echo "Installing Slack"
+brew install --cask slack
+
+echo "Installing Zoom"
+brew install --cask zoom
+
+echo "Installing Grammarly"
+brew install --cask grammarly
+
+echo "Installing Visual Studio Code"
+brew install --cask visual-studio-code
+
+echo "Installing Postman"
+brew install --cask postman
+
+echo "Installing Discord"
+brew install --cask discord
+
+
+echo "Done, you are all set to go to the next step, see ya later alligator! 
+                      .--.  .--.
+                    /    \/    \
+                   | .-.  .-.   \
+                   |/_  |/_  |   \
+                   || `\|| `\|    `----.
+                   |\0_/ \0_/    --,    \_
+ .--"""""-.       /              (` \     `-.
+/          \-----'-.              \          \
+\  () ()                         /`\          \
+|                         .___.-'   |          \
+\                        /` \|      /           ;
+ `-.___             ___.' .-.`.---.|             \
+    \| ``-..___,.-\'\`\| / /   /     |            `\
+     `      \|      ,\`/ /   /   ,  /
+             `      \|\ /   /    |\/
+              ,   .\'\`-;   \'    /
+         \,    |\-\'  .\'   ,.-\'\`
+       .-|\--;`` .-'     |\.'
+      ( \`\"\'-.|\ (___,.--\'\`\'   
+       \`-\.    `"`          _\.--\'
+          `\.          _.-\'\`-.
+            `'\'---'\'\`\`    \`.
+
+
+"
