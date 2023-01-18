@@ -6,6 +6,7 @@ echo  "Hey! let's get you all the applications u need.
 
 echo "Installing homebrew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
+set timeout -15
 
 echo "Updating homebrew..."
 brew update
