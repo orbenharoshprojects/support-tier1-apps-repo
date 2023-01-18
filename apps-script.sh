@@ -3,6 +3,29 @@ echo  "Hey! let's get you all the applications u need.
           This script will install all of the needed and recommended applications for you, 
               You can review all of the installed applications in the text file that will be installed in this path"
 
+echo '
+                /|         ,
+              ,///        /|
+             // //     ,///
+            // //     // //
+           // //     || ||
+           || ||    // //
+           || ||   // //
+           || ||  // //
+           || || || ||
+           \\,\|,|\_//
+            \\)\)\\|/
+            )-."" .-(
+           //^\` `/^\\
+          //  |   |  \\
+        ,/_| 0| _ | 0|_\,
+      /`    `"=.v.="`    `\
+     /`    _."{_,_}"._    `\
+     `/`  ` \  |||  / `  `\`
+      `",_  \\=^~^=//  _,"`
+          "=,\\-=-//="
+               ---
+  '
 
 echo "Installing homebrew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
@@ -59,4 +82,18 @@ echo "Installing Discord"
 brew install --cask discord
 
 
-echo "Done, you are all set to go to the next step, see ya later alligator!"
+echo "Done, you are all set to go to the next step, see ya later alligator!
+
+           .-._   _ _ _ _ _ _ _ _
+.-''-.__.-'00  '-' ' ' ' ' ' ' ' '-.
+'.___ '    .   .--_'-' '-' '-' _'-' '._
+  V: V 'vv-'   '_   '.       .'  _..' '.'.
+   '=.____.=_.--'   :_.__.__:_   '.   : :
+           (((____.-'        '-.  /   : :
+                              (((-'\ .' /
+                           _____..'  .'
+                          '-._____.-'
+
+"
+
+
