@@ -34,9 +34,6 @@ set timeout -60
 echo "Updating homebrew..."
 brew update
 
-echo "Installing iterm2...(A good alternative to the MacOS Terminal)"
-brew install --cask caskroom/cask/iterm2
-
 echo "Installing sublime-text...(A text editor for Mac with many helpful plugins and great package manager to install those plugins easily)"
 brew install --cask sublime-text
 
@@ -62,9 +59,6 @@ brew install python
 
 echo "Installing pip"
 python3 -m pip3 install --upgrade pip
-
-echo "Installing Slack"
-brew install --cask slack
 
 echo "Installing Zoom"
 brew install --cask zoom
