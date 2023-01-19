@@ -61,7 +61,7 @@ echo "Installing Python 3"
 brew install python
 
 echo "Installing pip"
-python3 -m pip install –upgrade pip
+python3 -m pip3 install --upgrade pip
 
 echo "Installing Slack"
 brew install --cask slack
