@@ -75,6 +75,8 @@ brew install --cask postman
 echo "Installing Discord"
 brew install --cask discord
 
+echo "Installing Sequel Ace"
+brew install --cask sequel-ace
 
 echo "Done, you are all set to go to the next step, see ya later alligator!
 
